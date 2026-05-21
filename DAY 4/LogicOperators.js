@@ -3,6 +3,7 @@ let a = 5;
 let b = 10;
 let c=2;
 let d= "2";
+let age = 12;
 let password = "password123";
 
 
@@ -47,4 +48,11 @@ if (c == d) {
     console.log("c is  equal to d");
 }  else {
     console.log("c is not equal to d");
+}
+
+//AND operator &&
+if (age >=18 && password.length >= 8) {
+    console.log("Age is valid and password is strong");
+} else {
+    console.log("Either age is not valid or password is not strong");
 }

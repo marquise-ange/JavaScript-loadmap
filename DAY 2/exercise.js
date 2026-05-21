@@ -54,6 +54,8 @@ console.log(haspermission);
 let favouritefood=["Pizza", "Burger", "Pasta"];
 console.log(favouritefood);
 
-favouritefood.splice(1, 1);
+// Add another food
+favouritefood.push("pizza");
 console.log(favouritefood);
 
+//remove one food

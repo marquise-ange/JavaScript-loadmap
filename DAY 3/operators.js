@@ -24,5 +24,13 @@ console.log(product); // Output: 50
 
 //4. division operator: 
 let quotient = a / b;
-console.log(quotient); // Output: 2
+console.log(quotient); // Output: 2 
+
+//5. modulus operator:
+let remainder = a % b;
+console.log(remainder); // Output: 0
+
+//6. exponentiation operator:
+let power = a ** b;
+console.log(power); // Output: 100000
 
