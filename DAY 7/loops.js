@@ -156,4 +156,9 @@ let randomNumber = Math.floor(Math.random() * 10) + 1;
     console.log("guess the number between 1 and 10");
  }
 
-console.log
+ //loops
+ let guessNumber;
+let randomNumber = Math.floor(Math.random() * 10) + 1;
+ while (guessNumber !== randomNumber) {
+    console.log("guess the number between 1 and 10");
+ }
