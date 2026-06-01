@@ -1,24 +1,26 @@
 
-const arr =[1, 2, 3, 4, 5, 6, 7];
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-//array methods by adding and removing elements from an array
-//1.push() -adds an element to the end of an array
-arr.push(8);
+
+//  array methods on Add and remove elements
+
+// 1. push() - adds an element to the end of an array
+
+// arr.push(11);
+
+// 2. pop() - extracts and element in end of an array 
+
+// arr.pop();
+delete arr[1]; // these is not recommended
+arr.splice(1, 4, "banana", "apple");
+
 console.log(arr);
 
-//2.pop() -removes the last element from an array
-arr.pop();
-console.log(arr);
+// 3. shift() - removes the first element in an array
 
-//3.splice() -removes an element from a specific index in an array
-arr.splice(2,1);//removes the element at index 2
-console.log(arr);
-
-//4.shift() -removes the first element from an array
 arr.shift();
-console.log(arr);
 
-//5.unshift() -adds an element to the beginning of an array
+
+// 4. unshift() - adds an element to the beginning of an array
+
 arr.unshift(0);
-console.log(arr);
-
