@@ -1,8 +1,10 @@
 function createParticipantCard(participant) {
 
-  const card = document.createElement("div");
+  const card =
+    document.createElement("div");
 
-  card.className = "participant-card fade-in";
+  card.className =
+    "participant-card fade-in";
 
   card.innerHTML = `
     <h3>${participant.name}</h3>
@@ -40,7 +42,8 @@ function renderParticipants(
   participants = Storage.getParticipants()
 ) {
 
-  const container = document.getElementById(
+  const container =
+    document.getElementById(
       "participantsList"
     );
 

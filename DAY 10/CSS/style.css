@@ -1,3 +1,7 @@
+/* ==========================
+   RESET
+========================== */
+
 * {
   margin: 0;
   padding: 0;
@@ -33,6 +37,9 @@ body {
   transition: 0.3s;
 }
 
+/* ==========================
+   LAYOUT
+========================== */
 
 .container {
   width: 90%;
@@ -73,7 +80,9 @@ body {
   margin-bottom: 8px;
 }
 
-
+/* ==========================
+   FORM
+========================== */
 
 .form-group {
   margin-bottom: 18px;
@@ -112,6 +121,9 @@ body {
   font-size: 0.85rem;
 }
 
+/* ==========================
+   BUTTONS
+========================== */
 
 .primary-btn,
 .theme-btn {
@@ -131,6 +143,9 @@ body {
   padding: 10px 16px;
 }
 
+/* ==========================
+   PASSWORD STRENGTH
+========================== */
 
 .strength-container {
 
@@ -154,6 +169,9 @@ body {
   transition: 0.3s;
 }
 
+/* ==========================
+   DASHBOARD
+========================== */
 
 .stats-grid {
 
@@ -186,6 +204,10 @@ body {
   font-weight: bold;
 }
 
+/* ==========================
+   SEARCH
+========================== */
+
 .search-wrapper {
 
   display: flex;
@@ -205,6 +227,9 @@ body {
   border: 1px solid var(--border);
 }
 
+/* ==========================
+   PARTICIPANTS
+========================== */
 
 .participants-grid {
 
@@ -263,6 +288,10 @@ body {
   background: crimson;
 }
 
+/* ==========================
+   DOCUMENT INFO
+========================== */
+
 .document-grid {
 
   display: grid;
@@ -289,6 +318,9 @@ body {
   opacity: 0.7;
 }
 
+/* ==========================
+   TOAST
+========================== */
 
 .toast {
 
@@ -307,6 +339,10 @@ body {
   opacity: 0;
   visibility: hidden;
 }
+
+/* ==========================
+   RESPONSIVE
+========================== */
 
 @media(max-width:768px){
 

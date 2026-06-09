@@ -1,6 +1,7 @@
 function updateDashboard() {
 
-  const participants =  Storage.getParticipants();
+  const participants =
+    Storage.getParticipants();
 
   document.getElementById(
     "totalRegistrations"

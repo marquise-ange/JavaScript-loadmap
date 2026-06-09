@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TaskFlow Dashboard</title>
+    <link rel="stylesheet" href="CSS/index.css" />
+</head>
+
+<body>
+
+    <!-- APP WRAPPER -->
+    <div id="app">
+
+        <!-- NAVBAR -->
+        <header class="navbar">
+            <h1>TaskFlow</h1>
+
+            <div class="controls">
+
+                <input type="text" id="searchBar" placeholder="Search tasks..." aria-label="Search tasks" />
+
+                <select id="filter" aria-label="Filter tasks by priority">
+                    <option value="all">All</option>
+                    <option value="low">Low</option>
+                    <option value="medium">Medium</option>
+                    <option value="high">High</option>
+                </select>
+
+                <button id="themeToggle" type="button">🌙</button>
+                <button id="openModal" type="button">+ New Task</button>
+
+            </div>
+        </header>
+
+        <!-- MAIN BOARD -->
+        <main class="board-wrapper">
+
+            <section class="column" data-column="todo">
+                <h2>To Do</h2>
+                <div class="task-list" id="todoList"></div>
+            </section>
+
+            <section class="column" data-column="progress">
+                <h2>In Progress</h2>
+                <div class="task-list" id="progressList"></div>
+            </section>
+
+            <section class="column" data-column="done">
+                <h2>Done</h2>
+                <div class="task-list" id="doneList"></div>
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- MODAL (OUTSIDE APP FLOW) -->
+    <div class="modal hidden" id="modal" role="dialog" aria-modal="true">
+
+        <form id="taskForm">
+
+            <h2>Create Task</h2>
+
+            <label for="taskTitle">Task Title</label>
+            <input type="text" id="taskTitle" placeholder="Task title" required />
+
+            <label for="taskPriority">Priority</label>
+            <select id="taskPriority">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+
+            <div class="modal-actions">
+                <button type="submit">Add Task</button>
+                <button type="button" id="closeModal">Cancel</button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <!-- JS MODULES -->
+    <script src="JS/storage.js"></script>
+    <script src="JS/tasks.js"></script>
+    <script src="JS/ui.js"></script>
+    <script src="JS/validation.js"></script>
+    <script src="JS/theme.js"></script>
+    <script src="JS/filter.js"></script>
+    <script src="JS/app.js"></script>
+
+</body>
+
+</html>
