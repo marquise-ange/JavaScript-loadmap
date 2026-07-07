@@ -9,25 +9,33 @@
 
 <body>
     <button>hello</button>
-
+    <button class="js-button">Second Button</button>
     <script>
+        //When an HTML element is in the JavaScript it's just a JavaScript object
         //properties and methods. 
 
-        //document.title changes the title on the webpage
-        console.log(document.title);
-        document.title = "changed";
-
-        //document.body...
-        console.log(document.body);//shows what is in the body of the webpage
-        console.log(typeof document.body);//show the datatype of the body we have in the webpage
-        console.log(document.body.innerHTML);//shows the all in the HTML 
-        document.body.innerHTML="changed"; //
-
+        //methods..
+        //1.querySelector() //works on the element from the HTML
+        console.log(document.querySelector('button').innerHTML);
+        document.querySelector('button')
+            .innerHTML = 'changed';
+        console.log(document.querySelector('.js-button'));
 
         /*
-        document.body.innerHTML = "hello";
-        document.title="Good Job!";
-*/
+                //document.title changes the title on the webpage
+                console.log(document.title);
+                document.title = "changed";
+        
+                //document.body changes the body of the webpage
+                console.log(document.body);//shows what is in the body of the webpage
+                console.log(typeof document.body);//show the datatype of the body we have in the webpage
+                console.log(document.body.innerHTML);//shows the all in the HTML 
+                document.body.innerHTML="<button>Good Job!</button>"; //
+        
+        
+                document.body.innerHTML = "hello";
+                document.title="Good Job!";
+        */
     </script>
 </body>
 
