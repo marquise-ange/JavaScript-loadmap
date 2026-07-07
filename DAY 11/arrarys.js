@@ -147,7 +147,7 @@ const combinedAB = a.concat(b); // this is another way to combine two arrays, it
 const nums2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
 const [first, second] = nums2;
-
+        
 const nestedArray = [1, [2, 3], [4, [5]]];
 
 
