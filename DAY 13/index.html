@@ -19,8 +19,9 @@
         console.log(document.querySelector('button').innerHTML);
         document.querySelector('button')
             .innerHTML = 'changed';
-        console.log(document.querySelector('.js-button'));
-
+        //console.log(document.querySelector('.js-button'));// it is called a class selector
+        const buttonElement = document.querySelector('.js-button');
+        console.log(buttonElement);
         /*
                 //document.title changes the title on the webpage
                 console.log(document.title);
